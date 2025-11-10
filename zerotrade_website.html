@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroTrade - Zero Barriers Trading Platform | Best Stock Trading App India</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="ZeroTrade - India's leading zero-commission stock trading platform. Buy stocks, mutual funds, and more with zero brokerage. Download our free trading app today.">
+    <meta name="keywords" content="online trading, stock trading app, zero brokerage, mutual funds, share market, trading platform">
+    <meta name="author" content="ZeroTrade">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Analytics 4 Code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: #fff;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF4757 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #FF6B6B;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF4757 100%);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #FF6B6B 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #FF6B6B;
+            padding: 0.9rem 2rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Features Section */
+        .features {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #FF6B6B;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Services Section */
+        .services {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+            margin: 3rem 0;
+        }
+
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .service-item h4 {
+            color: #FF6B6B;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        /* About Section */
+        .about {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .about-content p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-family: inherit;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Social Media Integration */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.8rem 1.2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transition: background 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+        }
+
+        .social-links a:hover {
+            background: #FF6B6B;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                display: none;
+            }
+
+            nav.mobile-open ul {
+                display: flex;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">ZeroTrade</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="btn-primary">Download App</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Zero Barriers to Trading</h1>
+        <p>Start trading with zero commission. Buy stocks, mutual funds, and more on India's most trusted platform.</p>
+        <div class="cta-buttons">
+            <button class="btn-primary">Download for iOS</button>
+            <button class="btn-secondary">Download for Android</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2 class="section-title">Why Choose ZeroTrade?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Zero Commission</h3>
+                <p>Trade without hidden charges. We believe investing should be accessible to everyone. No brokerage, no hidden fees.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Advanced Technology</h3>
+                <p>Lightning-fast execution with our proprietary trading engine. Real-time market data and professional charting tools.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Safe & Secure</h3>
+                <p>Bank-level security with 256-bit encryption. Your funds are protected with NSE and BSE regulations compliance.</p>
+            </div>
+            <div class="feature-card">
+                <h3>24/7 Support</h3>
+                <p>Our support team is always ready to help. Get assistance through chat, email, or phone anytime you need.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Easy Onboarding</h3>
+                <p>Complete KYC in just 10 minutes. Paperless account opening with instant approval and fund transfer.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Comprehensive Tools</h3>
+                <p>Trade stocks, mutual funds, bonds, and more. Access to IPOs, derivatives, and commodity markets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h4>📈 Equity Trading</h4>
+                    <p>Trade NSE and BSE stocks with zero commission and real-time charting.</p>
+                </div>
+                <div class="service-item">
+                    <h4>💼 Mutual Funds</h4>
+                    <p>Invest in 500+ mutual funds with no entry or exit load.</p>
+                </div>
+                <div class="service-item">
+                    <h4>📊 Market Data</h4>
+                    <p>Real-time quotes, depth charts, and screeners for informed decisions.</p>
+                </div>
+                <div class="service-item">
+                    <h4>🎓 Learning Center</h4>
+                    <p>Free courses and webinars to master trading and investing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About ZeroTrade</h2>
+            <p>Founded in 2024, ZeroTrade revolutionized India's stock trading landscape by eliminating commissions and democratizing access to financial markets.</p>
+            <p>With over 1 million happy traders, we're committed to making investing accessible, affordable, and empowering for everyone in India.</p>
+            <p>Our mission is simple: create a world where anyone can invest without barriers.</p>
+        </div>
+        <div class="about-image">
+            <div style="background: linear-gradient(135deg, #FF6B6B 0%, #FF4757 100%); height: 300px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                📱
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2>Get in Touch</h2>
+            <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Your Name" required alt="Enter your full name">
+                <input type="email" placeholder="Your Email" required alt="Enter your email address">
+                <textarea placeholder="Your Message" required alt="Type your message here"></textarea>
+                <button type="submit" class="btn-primary" style="cursor: pointer;">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="https://facebook.com/zerotrade" target="_blank" title="Follow ZeroTrade on Facebook" aria-label="Facebook">f</a>
+                <a href="https://twitter.com/zerotrade" target="_blank" title="Follow ZeroTrade on Twitter" aria-label="Twitter">𝕏</a>
+                <a href="https://instagram.com/zerotrade" target="_blank" title="Follow ZeroTrade on Instagram" aria-label="Instagram">📷</a>
+                <a href="https://linkedin.com/company/zerotrade" target="_blank" title="Follow ZeroTrade on LinkedIn" aria-label="LinkedIn">in</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ZeroTrade. All rights reserved.</p>
+        <p>Zero Commission Trading Platform | Secure | Fast | Reliable</p>
+        <p>Disclaimer: This is for educational purposes only. Always do your own research before investing.</p>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
